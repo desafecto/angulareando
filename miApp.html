@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="miApp">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Prueba de Angular</title>
+	<link rel="stylesheet" src="micss.css">
+	<script src="angular.min.js"></script>
+	<script src="miApp.js" type="text/javascript"></script>
+</head>
+<body ng-controller="acumuladorCtrl as vm">
+
+<h1>Sumador/Restador gilipollesco</h1>
+<div>Introduce la cantidad aquí
+	<input type="text" name="lacantidad" value="0" size="4" ng-model="vm.cantidad">
+	<input type="button" name="botonsuma" value="Suma" ng-click="vm.sumar()"><span><input type="button" name="botonresta" value="Resta" ng-click="vm.restar()"> </span>
+</div>
+<h2>Total:</h2>
+<div>El acumulado es mismamente: {{vm.acumulado}} </div>
+	
+</body>
+</html>
