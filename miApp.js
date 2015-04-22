@@ -3,13 +3,13 @@ angular
 .controller("acumuladorCtrl", elConstructor);
 
 function elConstructor(){
-	var scope = this;
-	scope.cantidad=0;
-	scope.acumulado=0;
-	scope.sumar = function () {
-		scope.acumulado += parseInt(scope.cantidad);
+	var mivar = this;
+ mivar.cantidad=0;
+ mivar.acumulado=0;
+ mivar.sumar = function () {
+	 mivar.acumulado += parseInt mivar.cantidad);
 	}
-	scope.restar = function(){
-		scope.acumulado -= parseInt(scope.cantidad);
+ mivar.restar = function(){
+	 mivar.acumulado -= parseInt mivar.cantidad);
 	}
 };
