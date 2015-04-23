@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="miApp">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Cuaderno de alumnos con Angular.js</title>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript" src="studentController.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body ng-controller="studentCtrl as vm">
+
+	<h1>Relación de alumnos</h1>
+	<div class="wrapper"> 
+		<div class="contact-item" ng-repeat="alumno in alumnos"> 
+		 	<div>{{vm.alumno[0]}}</div>
+		 	<span ></span>
+	    </div>
+	</div>	
+
+</body>
+</html>
