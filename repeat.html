@@ -12,9 +12,9 @@
 
 	<h1>Relación de alumnos</h1>
 	<div class="wrapper"> 
-		<div class="contact-item" ng-repeat="alumno in alumnos"> 
-		 	<div>{{vm.alumno[0]}}</div>
-		 	<span ></span>
+		<div class="contact-item" ng-repeat="alumno in vm.alumnos"> 
+		 	<div>{{alumno.nombre}} - {{alumno.curso}}</div>
+		 	<span >contacto:{{alumno.telefono}}</span>
 	    </div>
 	</div>	
 

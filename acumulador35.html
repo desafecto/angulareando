@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app='miapp'>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="acumulador35.css">
+	<script src="angular.min.js"></script>
+	<script src="acumulador35.js" type="text/javascript"></script>
+	<title>miapp - modules</title>
+</head>
+<body ng-controller="miAppCtrl as vm">
+	<h1>{{vm.titulo}}</h1>
+	<div class="wrapper">
+		<input type="text" name="cantidad1" value="0" placeholder="" ng-model="vm.cantidad">
+		<span><input type="button" name="suma" value="+"  ng-click="vm.sumar()"></span>
+		<span><input type="button" name="resta" value="-" ng-click="vm.restar()"> </span>
+	</div>
+	<div class="contact-item">Acumulado: {{vm.acumulado}} </div>
+</body>
+</html>
